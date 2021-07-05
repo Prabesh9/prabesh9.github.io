@@ -1,10 +1,10 @@
 import React from 'react';
+import Layout from "./layout";
+import './assets/css/index.scss';
 
-function App() {
+const App : () => JSX.Element = () => {
   return (
-    <div className="App">
-        <h1>Welcome to my portfolio!</h1>
-    </div>
+      <Layout/>
   );
 }
 
