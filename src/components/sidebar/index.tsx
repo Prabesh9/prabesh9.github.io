@@ -15,9 +15,9 @@ const SideBar : () => JSX.Element  = () => {
             <h2>Prabesh Maharjan</h2>
         </header>
         <ul className="link">
-            <li><a href="https://www.github.com/Prabesh9"><img className="ic ic-github" src={Github}/></a></li>
+            <li><a href="https://www.github.com/prabeshmrz"><img className="ic ic-github" src={Github}/></a></li>
             <li><a href="https://www.linkedin.com/in/prabesh-maharjan-04294a16b"><img className="ic ic-linkedin" src={LinkedIn}/></a></li>
-            <li><a href="https://www.facebook.com/prabesh9"><img className="ic ic-facebook" src={Facebook}/></a></li>
+            <li><a href="https://www.facebook.com/prabeshmrz"><img className="ic ic-facebook" src={Facebook}/></a></li>
         </ul>
         <nav>
             <NavLink to="/" activeClassName="active" className="ic ic-home" exact><span>Home</span></NavLink>
