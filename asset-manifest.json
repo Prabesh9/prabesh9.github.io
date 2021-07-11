@@ -1,29 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.cae0ecd9.chunk.css",
-    "main.js": "/static/js/main.98965f34.chunk.js",
-    "main.js.map": "/static/js/main.98965f34.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.730e3bf7.js",
-    "runtime-main.js.map": "/static/js/runtime-main.730e3bf7.js.map",
-    "static/js/2.ff355e9d.chunk.js": "/static/js/2.ff355e9d.chunk.js",
-    "static/js/2.ff355e9d.chunk.js.map": "/static/js/2.ff355e9d.chunk.js.map",
-    "static/js/3.21aafada.chunk.js": "/static/js/3.21aafada.chunk.js",
-    "static/js/3.21aafada.chunk.js.map": "/static/js/3.21aafada.chunk.js.map",
+    "main.css": "/static/css/main.cff1c78d.chunk.css",
+    "main.js": "/static/js/main.39c4e36f.chunk.js",
+    "main.js.map": "/static/js/main.39c4e36f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0ad58c70.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0ad58c70.js.map",
+    "static/js/2.1b015c86.chunk.js": "/static/js/2.1b015c86.chunk.js",
+    "static/js/2.1b015c86.chunk.js.map": "/static/js/2.1b015c86.chunk.js.map",
+    "static/js/3.bc53d935.chunk.js": "/static/js/3.bc53d935.chunk.js",
+    "static/js/3.bc53d935.chunk.js.map": "/static/js/3.bc53d935.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.cae0ecd9.chunk.css.map": "/static/css/main.cae0ecd9.chunk.css.map",
-    "static/js/2.ff355e9d.chunk.js.LICENSE.txt": "/static/js/2.ff355e9d.chunk.js.LICENSE.txt",
+    "static/css/main.cff1c78d.chunk.css.map": "/static/css/main.cff1c78d.chunk.css.map",
+    "static/js/2.1b015c86.chunk.js.LICENSE.txt": "/static/js/2.1b015c86.chunk.js.LICENSE.txt",
     "static/media/avatar.e1e3cfe0.jpg": "/static/media/avatar.e1e3cfe0.jpg",
     "static/media/index.scss": "/static/media/tools-solid.a1f432f2.svg",
     "static/media/facebook-square-brands.4572f314.svg": "/static/media/facebook-square-brands.4572f314.svg",
     "static/media/github-brands.e2f07326.svg": "/static/media/github-brands.e2f07326.svg",
-    "static/media/linkedin-brands.f4041044.svg": "/static/media/linkedin-brands.f4041044.svg",
-    "static/media/pass.md": "/static/media/pass.8238d522.md",
-    "static/media/test.md": "/static/media/test.38c5d1c3.md"
+    "static/media/linkedin-brands.f4041044.svg": "/static/media/linkedin-brands.f4041044.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.730e3bf7.js",
-    "static/js/2.ff355e9d.chunk.js",
-    "static/css/main.cae0ecd9.chunk.css",
-    "static/js/main.98965f34.chunk.js"
+    "static/js/runtime-main.0ad58c70.js",
+    "static/js/2.1b015c86.chunk.js",
+    "static/css/main.cff1c78d.chunk.css",
+    "static/js/main.39c4e36f.chunk.js"
   ]
 }
