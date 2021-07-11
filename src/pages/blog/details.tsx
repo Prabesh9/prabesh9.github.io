@@ -12,7 +12,6 @@ const BlogDetail: () => JSX.Element = () => {
     const {blogs, blogLoad} = useContext(MarkdownContext);
 
     useEffect(() => {
-    console.log("abc");
         setBlogDetail(blogs.filter(blog => blog.id === id)[0]);
     },[blogs])
 
@@ -25,7 +24,7 @@ const BlogDetail: () => JSX.Element = () => {
             <div className="markdown">
                 <h1>{blogDetail.title}</h1>
                 <div className="blog-header">
-                    <span className="aurthor">{blogDetail.aurthor}, </span>
+                    <span className="aurthor">{blogDetail.author}, </span>
                     <span className="date">{moment(new Date(blogDetail.timedate)).format('ddd D MMM, YYYY')}</span>
                 </div>
                 <ReactMarkdown components={CodeBlock}>

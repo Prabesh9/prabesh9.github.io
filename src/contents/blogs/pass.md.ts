@@ -1,6 +1,6 @@
----
+export const Pass = `---
 id = 001
-title = Manage password with pass command in Linux
+title = Manage password with pass command in Linux
 description = Easily manage all you passwords and credentials with the simplest password manager
 author = Prabesh Maharjan
 tags = pass; Linux; password manager; security
@@ -15,7 +15,7 @@ But, do we really need to manage our password manually? Aren't there password ma
 * passwords were stored in 3rd party server
 * passwords could have been compromised if servers were breached
 
-## Where does pass fit in?
+## Where does pass fit in?
 
 Pass is the simple password manager, following the UNIX philosophy. In between the hundreds of password managers, pass stands-out among the developer community due to its simplicity. It is basically a command line utility for password management.
 
@@ -55,9 +55,9 @@ To view the inserted or generated passwords, we use command:
 pass login_url/username
 ~~~
 
-It would directly show the password in the console itself. If that is not something you want then use `-c` flag. It will copy the password in clipboard. However, it will be erased from there after 45 sec., for the security purposes.
+It would directly show the password in the console itself. If that is not something you want then use \`-c\` flag. It will copy the password in clipboard. However, it will be erased from there after 45 sec., for the security purposes.
 
-As pass uses UNIX shell commands, managing of passwords is also very easy. We can use commands like `rm`, `mv`, `cp`, etc. to remove, move and copy our password files.
+As pass uses UNIX shell commands, managing of passwords is also very easy. We can use commands like \`rm\`, \`mv\`, \`cp\`, etc. to remove, move and copy our password files.
 
 Now for backing up the passwords, we can directly push it to our private repository.
 
@@ -72,4 +72,4 @@ Pass is not just limited to terminal. Community has come up with list of impress
 * [passff](https://github.com/passff/passff): a Firefox extension
 * [Android-Password-Store](https://github.com/android-password-store/Android-Password-Store): an android app
 
-You can checkout out various [commands](https://git.zx2c4.com/password-store/about/) that we can use with pass from the official site.
+You can checkout out various [commands](https://git.zx2c4.com/password-store/about/) that we can use with pass from the official site.`

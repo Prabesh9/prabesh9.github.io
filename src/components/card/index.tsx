@@ -6,7 +6,7 @@ interface ICard {
     id: string,
     title: string,
     description: string,
-    aurthor: string,
+    author: string,
     tags: string[],
     timedate: Date
 }
@@ -29,7 +29,7 @@ const Card: (props: ICard) => JSX.Element = (props: ICard) => {
                 : ""}
             </div>
             <div className="card-footer">
-                <span>{props.aurthor}</span>
+                <span>{props.author}</span>
                 <span>{props.timedate.getFullYear()}-{props.timedate.getMonth()}-{props.timedate.getDate()}</span>
             </div>
         </Link>

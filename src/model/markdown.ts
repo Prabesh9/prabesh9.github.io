@@ -5,7 +5,7 @@ export class Markdown {
     description: string;
     content: string;
     tags: string[];
-    aurthor: string;
+    author: string;
     timedate: number;
 
     constructor(
@@ -14,7 +14,7 @@ export class Markdown {
         description?: string,
         content?: string,
         tags?: string[],
-        aurthor?: string,
+        author?: string,
         timedate?: number,
     ) {
         this.id = id ?? "000";
@@ -22,7 +22,7 @@ export class Markdown {
         this.description = description ?? "No description";
         this.content = content ?? "";
         this.tags = tags ?? [];
-        this.aurthor = aurthor ?? "Prabesh Maharjan";
+        this.author = author ?? "Prabesh Maharjan";
         this.timedate = timedate ?? -1;
     }
 

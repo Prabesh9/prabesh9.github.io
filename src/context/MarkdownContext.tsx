@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { BlogContents } from '../contents/blogs';
 import { Markdown } from '../model/markdown';
-import { getMarkdownContents, importAll } from '../services/markdown';
+import { getMarkdownContents } from '../services/markdown';
 
 const initialState: Markdown[] = []
 
@@ -11,9 +12,8 @@ const initialContext = {
     projectLoad: false
 }
 
-const blogFiles: unknown[] = importAll(require.context('../contents/blogs', false, /\.md$/))
-
-const projectFiles: unknown[] = importAll(require.context('../contents/projects', false, /\.md$/))
+// eslint-disable-next-line
+const blogFiles: string[] = BlogContents();
 
 export const MarkdownContext = React.createContext(initialContext);
 
@@ -23,7 +23,7 @@ export const MarkdownProvider = (props: any) => {
     const [blogs, setBlogs] = useState(initialState);
     const [blogLoad, setBlogLoad] = useState(false);
 
-    const [projects, setProjects] = useState(initialState);
+    const [projects] = useState(initialState);
     const [projectLoad, setProjectLoad] = useState(false);
 
     useEffect(() => {
@@ -31,7 +31,7 @@ export const MarkdownProvider = (props: any) => {
             getMarkdownContents(blogFiles, (content) => {setBlogs(content); setBlogLoad(true);});
         }
         if (!projects.length) {
-            getMarkdownContents(projectFiles, (content) => {setProjects(content); setProjectLoad(true);});
+            setProjectLoad(true);
         }
     },[])
 

@@ -1,16 +1,9 @@
 import { Markdown } from "../../model/markdown";
 
-export const importAll: (r: __WebpackModuleApi.RequireContext) => unknown[] = (r: __WebpackModuleApi.RequireContext) => r.keys().map(r);
-
 // eslint-disable-next-line
-export const getMarkdownContents = (markdownFiles: any[], setContents: (contents: Markdown[]) => void) => {
-    Promise.all(markdownFiles.map(res => 
-        fetch(res.default)
-        .then(res => res.text())))
-        .then(contents => {
-            const markdowns = contents.map(content => {
-                return getMarkdownMetadata(content.split("\n"));
-            });
+export const getMarkdownContents = (markdownFiles: string[], setContents: (contents: Markdown[]) => void) => {
+    Promise.all(markdownFiles.map(res => getMarkdownMetadata(res.split("\n"))))
+        .then(markdowns => {
             markdowns.sort((a: Markdown, b: Markdown) => b.timedate - a.timedate);
             setContents(markdowns);
         })

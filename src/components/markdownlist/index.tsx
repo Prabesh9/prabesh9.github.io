@@ -19,7 +19,7 @@ const MarkdownList: (props: IMarkdownList) => JSX.Element = (props: IMarkdownLis
                     key={idx}
                     id={markdown.id}
                     title={markdown.title}
-                    aurthor={markdown.aurthor}
+                    author={markdown.author}
                     description ={markdown.description}
                     timedate={new Date(markdown.timedate)}
                     tags={markdown.tags}
