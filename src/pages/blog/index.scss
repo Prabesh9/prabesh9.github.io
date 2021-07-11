@@ -1,0 +1,73 @@
+@import '../../assets/css/variable.scss';
+
+.markdown {
+    padding: 40px 60px;
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: justify;
+        padding: 10px 0px;
+        font-size: 1.1em;
+    }
+
+    ul {
+        padding: 10px 0px 10px 50px;
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 10px;
+        font-size: 1.1em;
+    }
+
+    h2 {
+        margin-top: 10px;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    .blog-header {
+        display: flex;
+        justify-content: space-between;
+        color: $red;
+    }
+
+    .tags {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(10, auto);
+        justify-content: end;
+        column-gap: 5px;
+        overflow: hidden;
+        a{
+            border: 1px solid $red;
+            padding: 5px 10px;
+            color: $red;
+            text-decoration: none;
+            text-align: center;
+
+            &:hover {
+                box-shadow: 0px 0px 2px $red;
+            }
+        }
+        margin-bottom: 20px
+    }
+}
+
+.all-tags {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    a{
+        width: 100%;
+        padding: 10px 0px;
+        text-align: center;
+
+        &:hover {
+            box-shadow: 0px 0px 2px $red;
+        }
+    }
+}
