@@ -16,11 +16,11 @@ const BlogDetail: () => JSX.Element = () => {
     },[blogs])
 
     const getLink: (tag: string) => string = (tag: string) => {
-        return `/blog/tags(${tag})`;
+        return `/blog/tags/${tag}`;
     }
     return (
         <>
-            {blogLoad ?
+            {blogLoad && blogDetail ?
             <div className="markdown">
                 <h1>{blogDetail.title}</h1>
                 <div className="blog-header">
@@ -40,6 +40,8 @@ const BlogDetail: () => JSX.Element = () => {
                     : ""}
                 </div>
             </div>
+            : !blogDetail && id === "tags" ? ""
+            : !blogDetail ? "error"
             : "Detail Loading"}
         </>
     )

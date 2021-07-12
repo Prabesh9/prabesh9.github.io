@@ -28,6 +28,19 @@
         text-decoration: underline;
     }
 
+    code {
+        border: 1px solid $foreground;
+        padding: 0px 3px;
+        border-radius: 0.2em;
+    }
+
+    pre {
+        code {
+            border: none;
+        }
+    }
+
+
     .blog-header {
         display: flex;
         justify-content: space-between;

@@ -18,8 +18,8 @@ const Router: () => JSX.Element = () => {
             <Route path = "/projects" component = {Project} />
             <Route path = "/blog" exact component = {Blog} />
             <Route path = "/blog/tags" exact component = {Tags} />
-            <Route path = "/blog\(:id\)" component = {BlogDetail} />
-            <Route path = "/blog/tags\(:id\)" component = {BlogDetail} />
+            <Route path = "/blog/:id" exact component = {BlogDetail} />
+            <Route path = "/blog/tags/:id" component = {BlogDetail} />
         </>
     )
 }

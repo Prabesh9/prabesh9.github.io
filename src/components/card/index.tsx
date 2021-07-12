@@ -13,10 +13,10 @@ interface ICard {
 
 const Card: (props: ICard) => JSX.Element = (props: ICard) => {
     const getLink: (tag: string) => string = (tag: string) => {
-        return `/blog/tags(${tag})`;
+        return `/blog/tags/${tag}`;
     }
     return (
-        <Link to={`/blog(${props.id})`} className="card">
+        <Link to={`/blog/${props.id}`} className="card">
             <h3>{props.title}</h3>
             <p>{props.description}</p>
             <div className="tags">
