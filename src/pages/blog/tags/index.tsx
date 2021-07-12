@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { MarkdownContext } from '../../context/MarkdownContext';
-import { Markdown } from '../../model/markdown';
+import { MarkdownContext } from '../../../context/MarkdownContext';
+import { Markdown } from '../../../model/markdown';
 
 const initialState: string[] = [];
 
@@ -19,7 +19,7 @@ const Tags: () => JSX.Element = () => {
 
 
     const getLink: (tag: string) => string = (tag: string) => {
-        return `/blog/tags(${tag})`;
+        return `/blog/tags/${tag}`;
     }
 
     return (

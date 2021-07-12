@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import BlogDetail from '../pages/blog/details';
 import Blog from '../pages/blog/index';
 import Tags from '../pages/blog/tags';
+import TagDetails from '../pages/blog/tags/details';
 import Home from '../pages/home';
 import Project from '../pages/project';
 import Resume from '../pages/resume';
@@ -19,7 +20,7 @@ const Router: () => JSX.Element = () => {
             <Route path = "/blog" exact component = {Blog} />
             <Route path = "/blog/tags" exact component = {Tags} />
             <Route path = "/blog/:id" exact component = {BlogDetail} />
-            <Route path = "/blog/tags/:id" component = {BlogDetail} />
+            <Route path = "/blog/tags/:tag" component = {TagDetails} />
         </>
     )
 }
